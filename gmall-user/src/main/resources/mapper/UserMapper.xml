@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namespace中的参数是对应的dao接口路径-->
+<mapper namespace="com.huki.gmall.gmalluser.mapper.UserMapper">
+<!--   &lt;!&ndash;  resultMap中的type表示返回的pojo类型，property是pojo中的属性column是数据库中的对应字段属性  &ndash;&gt;-->
+<!--    <resultMap id="department" type="Department">-->
+<!--        &lt;!&ndash;id标签中放的主键result标签放的普通属性&ndash;&gt;-->
+<!--        <id property="sn" column="sn" javaType="String"/>-->
+<!--        <result property="name" column="name" javaType="String"/>-->
+<!--        <result property="address" column="address" javaType="String"/>-->
+<!--    </resultMap>-->
+
+<!--    &lt;!&ndash;parameterType是输入参数的类型，resultMap是返回参数的类型&ndash;&gt;-->
+<!--    <insert id="insert" parameterType="Department">-->
+<!--        insert into department values(#{sn},#{name},#{address})-->
+<!--    </insert>-->
+
+<!--    <update id="update" parameterType="Department">-->
+<!--        update department set name=#{name},address=#{address} where sn=#{sn}-->
+<!--    </update>-->
+
+<!--    <delete id="delete" parameterType="String">-->
+<!--        delete from department where sn=#{sn}-->
+<!--    </delete>-->
+
+<!--    <select id="select" parameterType="String" resultMap="department">-->
+<!--        select * from department where sn=#{sn}-->
+<!--    </select>-->
+
+    <select id="selectAllUser" resultType="com.huki.gmall.bean.UmsMember">
+        select * from ums_member
+    </select>
+
+
+</mapper>

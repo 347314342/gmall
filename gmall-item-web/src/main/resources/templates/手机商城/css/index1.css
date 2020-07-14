@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+html{
+	width: 1366px;
+	overflow-x: hidden;
+}
+.clearboth{
+	clear: both;
+}
+.foot{
+	width: 1366px;
+	height:505px;
+	background: #EAEAEA;
+}
+.fhead{
+	padding-top: 50px;
+	height: 100px;
+	width: 1166px;
+	margin-left: 100px;
+	display: flex;
+	justify-content: space-around;
+}
+.fhead>div{
+	height: 42px;
+	display: flex;
+	justify-content: space-around;
+}
+.fhead>div p{
+	width: 38px;
+	height: 42px;
+}
+.fhead>div span{
+	margin-top: 11px;
+	font-weight: 500;
+}
+.duo{
+	background: url("../img/di.png") no-repeat 0px 0px;
+}
+.kuai{
+	background: url(../img/di.png) no-repeat 0px -42px;
+}
+.hao{
+	background: url(../img/di.png) no-repeat 0px -85px;
+}
+.sheng{
+	background: url(../img/di.png) no-repeat 0px -128px;
+}
+a{
+	color: #666666;
+	text-decoration: none;
+	font-size: 12px;
+}
+a:hover{
+	color: red;
+	text-decoration: none;
+}
+.ftable{
+	margin-left: 160px;
+	width: 1200px;
+	padding-bottom: 20px;
+}
+.ftable td{
+	width: 240px;
+}
+.ful{
+	margin-top: 50px;
+	margin-left: 150px;
+}
+.ful>li{
+	float: left;
+	margin-right: 10px;
+	font-size: 12px;
+}
+div p{
+	font-size: 10px;
+	color: #666666;
+}
+.address1{
+	margin-top: 20px;
+	margin-left: 320px;
+	height: 30px;
+	line-height: 30px;
+}
+.address2{
+	margin-left: 280px;
+	height: 30px;
+	line-height: 30px;
+}
+.address3{
+	margin-left: 390px;
+	height: 30px;
+	line-height: 30px;
+}
+.address4{
+	margin-left: 550px;
+	height: 30px;
+	line-height: 30px;
+}
+.address1>*{
+	margin-right: 10px;
+	float: left;
+}
+.address2>*{
+	margin-right: 10px;
+	float: left;
+}
+.address3>*{
+	margin-right: 10px;
+	float: left;
+}
+.address4>*{
+	margin-right: 10px;
+	float: left;
+}

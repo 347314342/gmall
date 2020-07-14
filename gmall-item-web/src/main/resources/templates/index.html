@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+hello world
+{hello}
+<p th:text="${hello}">打底值</p>
+
+    <p th:each="str:${list}" th:text="${str}"/>
+
+
+<p th:each="str:${list}" >
+    <input th:text="${str}" value="123123" />
+</p>
+</body>
+</html>
