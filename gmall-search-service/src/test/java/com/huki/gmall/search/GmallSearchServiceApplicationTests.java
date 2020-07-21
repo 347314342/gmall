@@ -53,7 +53,7 @@ public class GmallSearchServiceApplicationTests {
 
             BeanUtils.copyProperties(pmsSkuInfo,pmsSearchSkuInfo);
 
-            pmsSearchSkuInfo.setId(pmsSkuInfo.getId());
+            pmsSearchSkuInfo.setId(Long.parseLong(pmsSkuInfo.getId()));
 
             pmsSearchSkuInfos.add(pmsSearchSkuInfo);
 

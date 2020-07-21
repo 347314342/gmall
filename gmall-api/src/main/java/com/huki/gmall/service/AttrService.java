@@ -5,6 +5,7 @@ import com.huki.gmall.bean.PmsBaseAttrValue;
 import com.huki.gmall.bean.PmsBaseSaleAttr;
 
 import java.util.List;
+import java.util.Set;
 
 public interface AttrService {
 
@@ -14,4 +15,6 @@ public interface AttrService {
     void saveAttrValue(PmsBaseAttrInfo pmsBaseAttrInfo);
 
     List<PmsBaseSaleAttr> baseSaleAttrList();
+
+    List<PmsBaseAttrInfo> getAttrValueListByValueId(Set<String> valueIdSet);
 }
